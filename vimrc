@@ -20,7 +20,7 @@ colorscheme solarized
 
 "" Style
 syntax enable
-set guifont=Anonymous\ Pro\ for\ Powerline:h13
+set guifont=Anonymice\ Powerline:h13
 set linespace=2
 set antialias
 set synmaxcol=1024               " don't try to highlight really long lines
