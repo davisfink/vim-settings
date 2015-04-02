@@ -65,3 +65,4 @@ set cursorline
 
 "" F2 to trim trailing whitespace
 map <F2> :%s/\s\+$//g
+autocmd BufRead,BufNewFile  *.tt,*.TT set filetype=HTML
