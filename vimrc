@@ -20,7 +20,8 @@ colorscheme solarized
 
 "" Style
 syntax enable
-set guifont=Anonymice\ Powerline:h12
+"" set guifont=Anonymice\ Powerline:h14
+set guifont=Sauce\ Code\ Powerline:h12
 set linespace=2
 set antialias
 set synmaxcol=1024               " don't try to highlight really long lines
@@ -65,4 +66,9 @@ set cursorline
 
 "" F2 to trim trailing whitespace
 map <F2> :%s/\s\+$//g
+"" F3 to trim empty lines
+map <F3> :%s/^\s*\n//g
+"" F4 to trim trailing whitespace and empty lines
+map <F4> :%s/\s\+$//g <bar> %s/^\s*\n//g
+
 autocmd BufRead,BufNewFile  *.tt,*.TT set filetype=HTML
