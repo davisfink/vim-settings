@@ -1,6 +1,8 @@
 execute pathogen#infect()
 let g:ctrlp_follow_symlinks=1
 let g:ctrlp_working_path_mode=0
+let g:ctrlp_max_files=0
+
 let mapleader=","
 set nocompatible
 set encoding=utf-8
@@ -45,8 +47,9 @@ let g:ctrlp_user_command = {
   \ 'types': {
     \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others']
     \ },
-  \ 'fallback': 'find %s -type f'
+  \ 'fallback': 'ag %s -l -g ""'
   \ }
+
 
 "" Invisible characters
 set list                        " show invisible characters
